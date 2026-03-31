@@ -102,7 +102,7 @@ export default function TableauGains() {
           </p>
         </motion.div>
 
-        {/* 📊 Grille compacte — 2 col mobile → 3 col tablette → 7 col desktop */}
+        {/* 📊 Grille compacte */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3 md:gap-4 mb-6">
           {regularGains.map((gain, index) => (
             <motion.div
@@ -165,7 +165,7 @@ export default function TableauGains() {
           <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
           <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full blur-2xl translate-y-1/2 -translate-x-1/4" />
 
-          <div className="relative z-10 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-5">
+          <div className="relative z-10 p-6 md:p-8 pb-10 md:pb-12 flex flex-col md:flex-row items-center justify-between gap-5">
             {/* Gauche : Icône + Label */}
             <div className="flex items-center gap-4">
               <div className="w-14 h-14 bg-brand-blue-dark/20 rounded-2xl flex items-center justify-center animate-pulse">
@@ -187,8 +187,7 @@ export default function TableauGains() {
                 10 000 000 F
               </div>
               <div className="mt-1 inline-flex items-center gap-1 bg-brand-blue-dark text-brand-gold px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-                <Zap size={12} /> Jackpot * À partager entre tous les gagnants
-                du Jackpot
+                <Zap size={12} /> Jackpot*
               </div>
             </div>
 
@@ -202,6 +201,11 @@ export default function TableauGains() {
               Tenter ma chance →
             </Link>
           </div>
+
+          {/* ✳️ Mention légale — bas droite */}
+          <span className="absolute bottom-2 right-4 z-20 text-[10px] sm:text-xs text-brand-blue-dark/50 italic font-normal">
+            * à partager entre tous les gagnants du jackpot
+          </span>
         </motion.div>
       </div>
     </section>
