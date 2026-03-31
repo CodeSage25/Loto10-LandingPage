@@ -34,6 +34,12 @@ export const metadata: Metadata = {
     "loto bonus",
   ],
   authors: [{ name: "Dyce Gaming" }],
+  // ===========================
+  // 🖼️ FAVICON SVG
+  // ===========================
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "LOTO 10 — Gagnez jusqu'à 10 000 000 F CFA",
     description:
