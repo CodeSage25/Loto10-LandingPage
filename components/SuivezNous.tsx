@@ -49,8 +49,8 @@ export default function SuivezNous() {
                           shadow-lg hover:shadow-xl 
                           hover:shadow-blue-500/30
                           transition-all duration-300
-                          group-hover:-translate-y-1
-                          group-hover:scale-105"
+                      
+                         "
             >
               {/* Icône Facebook */}
               <div

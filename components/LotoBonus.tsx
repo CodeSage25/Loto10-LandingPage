@@ -106,11 +106,11 @@ export default function LotoBonus() {
                 className="block group"
               >
                 <div
-                  className="bg-gradient-to-b from-white to-gray-50 
+                  className="bg-gradient-to-b from-white to-gray-200 
                              rounded-2xl p-6 text-center border border-gray-200
                              hover:border-brand-gold/50 hover:shadow-xl 
                              transition-all duration-300 h-full
-                             group-hover:-translate-y-1"
+                            "
                 >
                   {/* Logo du jeu — w-auto + h-auto pour le ratio */}
                   <div className="mb-5 flex justify-center">
@@ -120,7 +120,7 @@ export default function LotoBonus() {
                       width={120}
                       height={120}
                       className="h-20 sm:h-24 w-auto object-contain
-                                 group-hover:scale-110 transition-transform duration-300"
+                                 group-hover:scale-110 transition-transform duration-300 "
                     />
                   </div>
 
