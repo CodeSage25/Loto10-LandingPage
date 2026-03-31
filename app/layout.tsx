@@ -22,9 +22,9 @@ const inter = Inter({
 
 // 📋 Métadonnées SEO — ce que Google et les réseaux sociaux voient
 export const metadata: Metadata = {
-  title: "LOTO 10 — Gagnez jusqu'à 10 000 000 F CFA | IziLoto Cameroun",
+  title: "Loto 10 — Gagnez jusqu'à 10 000 000 F CFA | IziLoto Cameroun",
   description:
-    "Jouez au LOTO 10 sur IziLoto.cm : choisissez 10 numéros, misez à partir de 100 F CFA et tentez de gagner le Jackpot de 10 000 000 F CFA toutes les 30 minutes !",
+    "Jouez au Loto 10 sur IziLoto.cm : choisissez 10 numéros, misez à partir de 100 F CFA et tentez de gagner le Jackpot de 10 000 000 F CFA toutes les 30 minutes !",
   keywords: [
     "loto 10",
     "iziloto",
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     icon: "/favicon.svg",
   },
   openGraph: {
-    title: "LOTO 10 — Gagnez jusqu'à 10 000 000 F CFA",
+    title: "Loto 10 — Gagnez jusqu'à 10 000 000 F CFA",
     description:
-      "Jouez au LOTO 10 sur IziLoto.cm. Jackpot toutes les 30 minutes !",
+      "Jouez au Loto 10 sur IziLoto.cm. Jackpot toutes les 30 minutes !",
     url: "https://iziloto.cm",
     siteName: "LOTO 10 by IziLoto",
     locale: "fr_CM",

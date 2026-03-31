@@ -187,8 +187,8 @@ export default function TableauGains() {
                 10 000 000 F
               </div>
               <div className="mt-1 inline-flex items-center gap-1 bg-brand-blue-dark text-brand-gold px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-                <Zap size={12} />
-                Jackpot partagé
+                <Zap size={12} /> Jackpot * À partager entre tous les gagnants
+                du Jackpot
               </div>
             </div>
 
