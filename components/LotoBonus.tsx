@@ -71,7 +71,7 @@ export default function LotoBonus() {
 
             {/* Texte explicatif en dessous */}
             <p className="text-base sm:text-lg text-gray-600">
-              Choisis tes numéros parmi 1 à 10, gagne s&apos;ils sortent dans
+              Choisis tes numéros de 1 à 10, gagne s&apos;ils sortent dans
               l&apos;ordre parmi les 10 tirés !
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function LotoBonus() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-center text-sm text-gray-500 mt-8"
           >
-            💡 Exemple : une mise de 1000 F au 5 Ordre = 1000 × 75 ={" "}
+            💡 Exemple : une mise de 1000 F au Loto 5/10 = 1000 × 75 ={" "}
             <span className="font-bold text-brand-blue">75 000 F CFA</span> de
             gain !
           </motion.p>
