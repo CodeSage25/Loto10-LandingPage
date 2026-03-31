@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/* 🎨 Variables CSS custom pour les couleurs de marque */
+@theme {
+  --color-brand-blue: #1a237e;
+  --color-brand-blue-light: #283593;
+  --color-brand-blue-dark: #0d1147;
+  --color-brand-gold: #f9a825;
+  --color-brand-gold-light: #fdd835;
+  --color-brand-gold-dark: #f57f17;
+  --color-brand-red: #d32f2f;
+  --color-brand-red-light: #ef5350;
+
+  /* Animations */
+  --animate-shimmer: shimmer 2s linear infinite;
+  --animate-pulse-slow: pulse 3s ease-in-out infinite;
+
+  /* Fonts */
+  --font-heading: var(--font-heading), sans-serif;
+  --font-body: var(--font-body), sans-serif;
+}
+
+/* ✨ Keyframes */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* 🌐 Styles de base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #ffffff;
+  color: #1a1a1a;
+  /* Empêcher le scroll horizontal sur mobile */
+  overflow-x: hidden;
+}
+
+/* Style pour les ancres (éviter que le header sticky cache le contenu) */
+[id] {
+  scroll-margin-top: 80px;
+}
+
+/* 📱 Cacher la scrollbar horizontale des filtres sur mobile */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* 🖱️ Sélection de texte aux couleurs de la marque */
+::selection {
+  background-color: #f9a825;
+  color: #0d1147;
+}
+
+/* 📱 Améliorer le touch sur mobile */
+@media (max-width: 640px) {
+  /* Boutons plus gros sur mobile pour le touch */
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* ✨ Focus visible pour l'accessibilité */
+:focus-visible {
+  outline: 2px solid #f9a825;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
