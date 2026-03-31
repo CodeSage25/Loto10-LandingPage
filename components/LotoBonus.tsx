@@ -46,7 +46,10 @@ export default function LotoBonus() {
   return (
     <section id="loto-bonus" className="py-20 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Logo titre */}
+        {/* 
+          Logo titre — CORRIGÉ : Logo_LotoBONUS.png (PNG, pas SVG)
+          On utilise <img> standard pour éviter les erreurs Vercel
+        */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -54,11 +57,10 @@ export default function LotoBonus() {
           transition={{ duration: 0.6 }}
           className="text-center mb-6"
         >
-          <Image
-            src="/images/Logo_LotoBonus.png"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/Logo_LotoBONUS.png"
             alt="Loto Bonus"
-            width={300}
-            height={80}
             className="mx-auto h-16 sm:h-20 lg:h-24 w-auto mb-6"
           />
           {/* Sous le titre principal — remplace ton ancien <p> */}

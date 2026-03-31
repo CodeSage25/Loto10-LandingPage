@@ -1,17 +1,10 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
-import {
-  Trophy,
-  Calendar,
-  ChevronLeft,
-  ChevronRight,
-  Award,
-} from "lucide-react";
+import { Trophy, Calendar, ChevronLeft, ChevronRight } from "lucide-react";
 
 import gagnantData from "@/data/gagnants.json";
 
@@ -20,6 +13,7 @@ type Gagnant = {
   image: string;
   description: string;
   date: string;
+  texte: string;
 };
 
 const ITEMS_PER_PAGE = 5;
@@ -69,20 +63,22 @@ export default function GagnantsPage() {
                                   transition-all duration-300
                                   flex flex-col sm:flex-row"
                     >
-                      {/* 🖼️ IMAGE — côté gauche */}
+                      {/* 🖼️ IMAGE — côté gauche
+                          CORRIGÉ : utilise <img> au lieu de <Image>
+                          pour éviter les erreurs 400 sur Vercel
+                      */}
                       <div
                         className="relative w-full sm:w-72 lg:w-80 flex-shrink-0
                                     aspect-[4/3] sm:aspect-auto sm:min-h-[200px]
                                     overflow-hidden bg-gray-100"
                       >
-                        <Image
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
                           src={gagnant.image}
                           alt={gagnant.description}
-                          fill
-                          className="object-contain 
-                               
+                          className="w-full h-full object-contain
                                      transition-transform duration-500"
-                          sizes="(max-width: 640px) 100vw, 3200px"
+                          loading="lazy"
                         />
 
                         {/* Numéro du gagnant */}
@@ -114,10 +110,16 @@ export default function GagnantsPage() {
                         >
                           {gagnant.description}
                         </h3>
+                        <h5
+                          className="font-heading font text-brand-blue-dark 
+                                      "
+                        >
+                          {gagnant.texte}
+                        </h5>
 
-                        {/* Barre de progression décorative */}
-                        <div className="flex items-center gap-3">
-                          <span className="text-[11px] font-bold text-brand-gold-dark uppercase tracking-wider">
+                        {/* Badge vérifié */}
+                        <div className="flex items-center gap-30 py-2 mt-4 ">
+                          <span className="text-[11px] font-bold text-brand-gold-dark uppercase tracking-wider ">
                             Vérifié ✓
                           </span>
                         </div>
