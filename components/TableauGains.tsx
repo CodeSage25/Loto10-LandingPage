@@ -204,7 +204,7 @@ export default function TableauGains() {
 
           {/* ✳️ Mention légale — bas droite */}
           <span className="absolute bottom-2 right-4 z-20 text-[10px] sm:text-xs text-brand-blue-dark/50 italic font-normal">
-            * à partager entre tous les gagnants du jackpot
+            * À partager entre tous les gagnants du jackpot
           </span>
         </motion.div>
       </div>
